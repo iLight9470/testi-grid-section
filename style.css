@@ -1,0 +1,236 @@
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "card-1 card-1 card-2 card-5"
+        "card-3 card-4 card-4 card-5";
+    width: 100%;
+    max-width: 1440px;
+    gap: 3rem;
+}
+
+.testimonials img {
+    border-radius: 50%;
+    width: 40px;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card {
+    border-radius: 15px;
+    padding: 2.5rem;
+}
+
+.card-1 {
+    grid-area: card-1;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    box-shadow: 15px 15px 30px rgba(30, 20, 16, 0.493);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0;
+    background-size: 160px auto;
+}
+
+.card-1 img {
+    border: 3px solid hsl(264, 82%, 80%);
+}
+
+.card-1 .name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0rem;
+    color: hsl(260, 100%, 95%);
+}
+
+.card-1 .status {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: hsl(260, 100%, 95%);
+}
+
+.card-1 h2 {
+    color: hsl(260, 100%, 95%);
+}
+
+.card-1 .description {
+    color: hsl(260, 100%, 95%);
+    font-weight: 540;
+    line-height: 1.5;
+}
+
+.card-2 {
+    grid-area: card-2;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    padding: 3rem;
+    box-shadow: 15px 15px 30px rgba(30, 20, 16, 0.493);
+}
+
+.card-2 img {
+    border: 3px solid hsl(224, 10%, 45%);
+}
+
+.card-2 .name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0rem;
+    color: hsl(214, 17%, 92%);
+}
+
+.card-2 .status {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: hsl(214, 17%, 92%);
+}
+
+.card-2 h2 {
+    color: hsl(214, 17%, 92%);
+}
+
+.card-2 .description {
+    color: hsl(214, 17%, 92%);
+    line-height: 1.5;
+    font-weight: 540;
+    font-size: 1.1rem;
+}
+
+.card-3 {
+    grid-area: card-3;
+    box-shadow: 15px 15px 30px rgba(30, 20, 16, 0.493);
+}
+
+.card-3 img {
+    border: 3px solid hsl(214, 17%, 92%);
+}
+
+.card-3 .name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: hsl(217, 19%, 35%);
+}
+
+.card-3 .status {
+    color: hsl(217, 19%, 35%);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-3 h2 {
+    color: hsl(217, 19%, 35%);
+}
+
+.card-3 .description {
+    color: hsl(217, 19%, 35%);
+    line-height: 1.5;
+    font-weight: 540;
+}
+
+.card-4 {
+    grid-area: card-4;
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 81%);
+    box-shadow: 15px 15px 30px rgba(30, 20, 16, 0.493);
+}
+
+.card-4 img {
+    border: 3px solid hsl(264, 82%, 80%);
+}
+
+.card-4 .name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: hsl(0, 0%, 81%);
+}
+
+.card-4 .status {
+    color: hsl(0, 0%, 81%);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-4 .description {
+    line-height: 1.5;
+}
+
+.card-5 {
+    grid-area: card-5;
+    box-shadow: 15px 15px 30px rgba(30, 20, 16, 0.493);
+}
+
+.card-5 img {
+    border: 3px solid hsl(214, 17%, 92%);
+}
+
+.card-5 .name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: hsl(217, 19%, 35%);
+}
+
+.card-5 .status {
+    color: hsl(217, 19%, 35%);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-5 h2 {
+    color: hsl(217, 19%, 35%);
+}
+
+.card-5 .description {
+    color: hsl(217, 19%, 35%);
+    line-height: 1.5;
+    font-weight: 540;
+}
+
+/* mobile version */
+@media (max-width: 768px) {
+    body {
+        padding: 1.5rem;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "card-1"
+        "card-2"
+        "card-3"
+        "card-4"
+        "card-5";
+    }
+
+    .card {
+        padding: 2rem;
+    }
+}
